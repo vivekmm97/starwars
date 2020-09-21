@@ -1,0 +1,24 @@
+.main-flex{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.load{
+}
+img{
+    margin: 90px 94px 0 0 ;
+}
+.lists:hover{
+    background-image: url('src/assets/characters/films_pressed.png');
+
+}
+.labels{
+    font-family: 'Open Sans',sans-serif;
+    color: #fff;
+    width: 190px;
+    /* margin-top: 16px; */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
