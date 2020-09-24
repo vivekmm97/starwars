@@ -1,5 +1,11 @@
-<div class="flex-main">
-    <div class="info photo">
+<div class="main" *ngIf="status">
+    <div class="data-box" (click)="loadDetails();">
+        <span class="textData">Vivek</span>
+    </div>
+</div>
+
+<div class="flex-main" *ngIf="detailStatus">
+        <div class="info photo">
         <div class="demo"></div>
     </div>
     <div class="info details">

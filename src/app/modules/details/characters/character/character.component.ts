@@ -12,7 +12,7 @@ export class CharacterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("Status",this.status)
+    // console.log("Status",this.status)
   }
   loadDetails(){
     this.contentStatus = false;

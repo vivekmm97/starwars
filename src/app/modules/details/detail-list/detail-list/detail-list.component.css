@@ -42,7 +42,7 @@ a{
 
 .detail-flex{
     display: flex;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     flex-wrap: nowrap;
     height: 580px;
     width: 1110px;

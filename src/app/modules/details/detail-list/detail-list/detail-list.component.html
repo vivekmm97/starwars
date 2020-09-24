@@ -1,21 +1,21 @@
 <!-- <div> -->
 <div class="flex-main">
-    <div class="box" (click)="routerLink('films')">
+    <div class="box" (click)="routerLink('films');">
         <p>FILMS</p>
     </div>
-    <div class="box" (click)="routerLink('species')">
+    <div class="box" (click)="routerLink('species');">
         <p>SPECIES</p>
     </div>
-    <div class="box" (click)="routerLink('planets')">
+    <div class="box" (click)="routerLink('planets');">
         <p>PLANETS</p>
     </div>
-    <div class="box" (click)="routerLink('people')">
+    <div class="box" (click)="routerLink('people');">
         <p>CHARACTERS</p>
     </div>
-    <div class="box" (click)="routerLink('vehicles')">
+    <div class="box" (click)="routerLink('vehicles');">
         <p>VEHICLES</p>
     </div>
-    <div class="box" (click)="routerLink('starships')">
+    <div class="box" (click)="routerLink('starships');">
         <p>STARSHIPS</p>
     </div>
 </div>
@@ -27,16 +27,16 @@
 <!-- load details page -->
 
 <div class="detail-flex" *ngIf="filmStatus">
-    <app-films></app-films>
+    <app-films [status]="filmStatus"></app-films>
 </div>
 
 <div class="detail-flex" *ngIf="speciesStatus">
-    <app-species></app-species>
+    <app-species [status]="speciesStatus"></app-species>
 </div>
 
 
 <div class="detail-flex" *ngIf="planetStatus">
-    <app-planets></app-planets>
+    <app-planets [status]="planetStatus"></app-planets>
 </div>
 
 
@@ -46,11 +46,10 @@
 
 
 <div class="detail-flex" *ngIf="vehicleStatus">
-    <app-vehicles></app-vehicles>
+    <app-vehicles [status]="vehicleStatus"></app-vehicles>
 </div>
 
 
 <div class="detail-flex" *ngIf="starshipStatus">
-    <app-starship></app-starship>
+    <app-starship [status]="starshipStatus"></app-starship>
 </div>
-
