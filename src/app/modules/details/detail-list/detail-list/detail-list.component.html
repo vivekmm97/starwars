@@ -1,0 +1,56 @@
+<!-- <div> -->
+<div class="flex-main">
+    <div class="box" (click)="routerLink('films')">
+        <p>FILMS</p>
+    </div>
+    <div class="box" (click)="routerLink('species')">
+        <p>SPECIES</p>
+    </div>
+    <div class="box" (click)="routerLink('planets')">
+        <p>PLANETS</p>
+    </div>
+    <div class="box" (click)="routerLink('people')">
+        <p>CHARACTERS</p>
+    </div>
+    <div class="box" (click)="routerLink('vehicles')">
+        <p>VEHICLES</p>
+    </div>
+    <div class="box" (click)="routerLink('starships')">
+        <p>STARSHIPS</p>
+    </div>
+</div>
+<!-- link ends -->
+
+<!-- breakLine  -->
+<hr class="breakLine">
+
+<!-- load details page -->
+
+<div class="detail-flex" *ngIf="filmStatus">
+    <app-films></app-films>
+</div>
+
+<div class="detail-flex" *ngIf="speciesStatus">
+    <app-species></app-species>
+</div>
+
+
+<div class="detail-flex" *ngIf="planetStatus">
+    <app-planets></app-planets>
+</div>
+
+
+<div class="detail-flex" *ngIf="charStatus">
+    <app-character [status]="charStatus"></app-character>
+</div>
+
+
+<div class="detail-flex" *ngIf="vehicleStatus">
+    <app-vehicles></app-vehicles>
+</div>
+
+
+<div class="detail-flex" *ngIf="starshipStatus">
+    <app-starship></app-starship>
+</div>
+

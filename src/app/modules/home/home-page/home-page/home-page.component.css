@@ -2,16 +2,54 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 90px;
 }
 
 .load{
+    margin-left: auto;
+    margin-right: auto;
+    }
+.lists{
+    height: 195px;
+    width: 195px; 
+    margin: 90px 65px 0 0 ;
 }
-img{
-    margin: 90px 94px 0 0 ;
+.films{
+    background-image: url('/assets/characters/films_normal.png');
 }
-.lists:hover{
+.films:hover{
     background-image: url('src/assets/characters/films_pressed.png');
+}
 
+.people{
+    background-image: url('/assets/characters/characters_normal.png');
+}
+.people:hover{
+    background-image: url('src/assets/characters/characters_pressed.png');
+}
+.vehicle{
+    background-image: url('/assets/characters/vehicles_normal.png');
+}
+.vehicle:hover{
+    background-image: url('src/assets/characters/vehicles_pressed.png');
+}
+.planet{
+    background-image: url('/assets/characters/planets_normal.png');
+}
+.planet:hover{
+    background-image: url('src/assets/characters/planets_pressed.png');
+}
+.species{
+    background-image: url('/assets/characters/species_normal.png');
+}
+.species:hover{
+    background-image: url('src/assets/characters/species_pressed.png');
+}
+.starship{
+    background-image: url('/assets/characters/droids_normal.png');
+}
+.starship:hover{
+    background-image: url('src/assets/characters/droids_pressed.png');
 }
 .labels{
     font-family: 'Open Sans',sans-serif;

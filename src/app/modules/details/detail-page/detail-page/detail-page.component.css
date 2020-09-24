@@ -1,0 +1,29 @@
+.main{
+    height: auto;
+    width: 1110px; 
+    /* justify-content: center; */
+}
+
+.data-box{
+    
+    height: 44px;
+    width: 380px;
+    margin-right: 50%;
+    margin-left: 30%;
+}
+
+.data-box:hover{
+    background-color: #00A8FF;
+    opacity: 40%;
+    color: #FFFFFF;
+}
+
+.textData{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    color:#FFFFFF;
+    size: 20px;
+    line-height: 58px;
+    margin-right: 50%;
+    margin-left: 50%;
+}

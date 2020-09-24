@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
 
   constructor() { }
-
+  homeStatus =true;
+  listStatus = false;
   ngOnInit(): void {
   }
 

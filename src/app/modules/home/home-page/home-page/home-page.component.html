@@ -1,13 +1,86 @@
-<div class="main-flex">
-    
-    <div class="load">
+<div class="main-flex" *ngIf="status">
+       
+<div class="load">
+    <div class="lists films" (click)="selected('films');"> </div>
 
-        <img src="/assets/characters/films_normal.png" alt="" class="lists" (click)="selected();">
-    
-    <div class="labels">
+<div class="labels">
 
-        <p>FILMS</p>
-        
-    </div>
+    <p>FILMS</p>
+    
+</div>
 
 </div>
+
+   
+<div class="load">
+    <div class="lists species" (click)="selected('species');"> </div>
+
+<div class="labels">
+
+    <p>SPECIES</p>
+    
+</div>
+
+</div>
+
+
+<div class="load">
+    <div class="lists planet" (click)="selected('planets');"> </div>
+
+<div class="labels">
+
+    <p>PLANETS</p>
+    
+</div>
+
+</div>
+
+   
+<div class="load">
+    <div class="lists people" id="film" (click)="selected('people');"> </div>
+
+<div class="labels">
+
+    <p>PEOPLE</p>
+    
+</div>
+
+</div>
+
+
+   
+<div class="load">
+    <div class="lists starship" (click)="selected('starships');"> </div>
+
+<div class="labels">
+
+    <p>STARSHIPS</p>
+    
+</div>
+
+</div>
+
+
+   
+<div class="load">
+    <div class="lists vehicle" (click)="selected('vehicles');"> </div>
+
+<div class="labels">
+
+    <p>VEHICLES</p>
+    
+</div>
+
+</div>
+
+</div>
+
+<div *ngIf="loadStatus">
+    <app-detail-list [load]="text"></app-detail-list>
+</div>  
+
+<!-- one profile -->
+
+
+<!-- flex ends -->
+
