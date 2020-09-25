@@ -1,0 +1,9 @@
+div{
+    height: auto;
+}
+
+@media only screen and (max-width: 680px) {
+    div{
+        height: auto;
+    }
+}

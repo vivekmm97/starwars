@@ -1,4 +1,6 @@
 .main{
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     width: 1110px; 
     /* justify-content: center; */
@@ -28,3 +30,34 @@
     margin-right: 50%;
     margin-left: 50%;
 }
+
+/* response */
+
+@media all and (max-width: 1200px) , (max-width: 600px) , (max-width : 200px) {
+    .main{
+        height: auto;
+        width: 82%; 
+        /* justify-content: center; */
+        overflow-y: hidden;
+    }
+    .data-box{
+        height: 44px;
+        width: 32%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+.data-box:hover{
+    background-color: #00A8FF;
+    opacity: 40%;
+    color: #FFFFFF;
+}
+
+    .textData{
+        font-family: 'Open Sans',sans-serif;
+        font-weight: bold;
+        color:#FFFFFF;
+        size: 38px;
+        line-height: 58px;
+    }
+}       
